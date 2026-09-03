@@ -6,7 +6,7 @@ fn main() {
 
 
 	// compound interest
-	let a = p*(1.0+(r/100.0)).powi(n);
+	let a = p * ( 1.0 + ( r / 100.0 )).powi(n);
 	println!("Amount is {:.2}", a); // the :.2 is so the calculations do not have weird decimal places
 	let ci = a - p;
 	println!("Compound Interest is {:.2}", ci);
