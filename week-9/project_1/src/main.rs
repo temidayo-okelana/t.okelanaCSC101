@@ -2,10 +2,10 @@ use std::io::Write;
 
 fn main() {
 
-   
-    let lager = vec!["33 Export", "Desperados", "Goldberg","Gulder","Heineken","Star"];
-    let stout = vec!["Legend", "Turbo King", "Williams","","",""];
-    let non_alc = vec!["Maltina","Amstel Malta","Malta Gold","Fayrouz","",""];
+    // creating table contents by column
+    let lager = vec!["Lager","33 Export", "Desperados", "Goldberg","Gulder","Heineken","Star"];
+    let stout = vec!["Stout","Legend", "Turbo King", "Williams","","",""];
+    let non_alc = vec!["Non-Alcoholic","Maltina","Amstel Malta","Malta Gold","Fayrouz","",""];
 
     let mut file = std::fs::File::create("nigerian_breweries_catalogue.csv").expect("create failed");
     file.write_all("The Nigerian Brewereis Categories of Drinks\n".as_bytes()).expect("write failed");
